@@ -1,8 +1,14 @@
-.container{
-    display: flex;
-    flex-direction: row;
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-content: center;
     justify-content: space-around;
-    align-items: center;
 }
 
 .brand {
@@ -10,10 +16,12 @@
     font-size: 42px;
 }
 
-form {
-    position: relative;
-    width: 350px;
-    margin: 0 auto;
+.search_line_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-content: center;
+    align-self: center; 
 }
 
 .search_line_container input {
@@ -27,10 +35,12 @@ form {
 }
 
 .basket_container {
-    display: flex;
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
 }
-
+c
 .basket {
     width: 37px;
     height: 37px;
@@ -41,49 +51,56 @@ form {
     color: #a1a1a1;
 }
 
-.nav_menu{
-    width: 100%;
+.nav_menu {
+    /* width: 100%; */
+    white-space: nowrap;
     background: #4ccfc1;
     color: #fff;
-    
 }
-.nav_menu ul{
-    display: flex;
-    flex-flow: row wrap;
+
+.nav_menu ul {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    justify-items: center;
+    align-content: center;
     justify-content: space-around;
-    align-items: center;
     list-style: none;
     font-family: 'Staatliches', cursive;
 }
-.nav_menu li{
+
+.nav_menu li {
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.cowhide{
+.cowhide {
     display: flex;
     flex-direction: column;
     background: #3dc6b8;
     color: #fff;
 }
 
-.conwide-discription{
+.conwide-discription {
     display: flex;
     flex-direction: column;
 }
-.cowhide h1{
+
+.cowhide h1 {
     text-transform: uppercase;
 }
 
-.shop_branded_container{
-    display: flex;
-    flex-flow: row nowrap;
+.shop_branded_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 20px;
+    padding: 20px 0;
+    justify-items: center;
     justify-content: space-around;
-    align-items: center;
     text-transform: uppercase;
+    align-content: center;
 }
 
-.feature_headline{
+.featured_headline {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -94,11 +111,43 @@ form {
     font-family: 'Staatliches', cursive;
 }
 
-.featured_shops{
-    display: flex;
-    flex-flow: row wrap;
+.featured_shops {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 20px;
+    padding: 20px 0;
+    justify-items: center;
     justify-content: space-around;
-    align-items: center;
+    
 }
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 20px;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #3cc3b5;
+    color: #fff;
+}
+
+.footer_name {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer_head {
+    text-transform: uppercase;
+}
+
+.footer_copyright {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #2da89b;
+    color: #fff;
+}
+
 
   
